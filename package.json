@@ -1,0 +1,49 @@
+{
+  "name": "js-build-template-literal-stripper",
+  "version": "1.0.0",
+  "description": "A robust Rollup configuration that aggressively strips exotic and problematic whitespace from bundled JavaScript template literals for optimal production builds.",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "npx rollup -c --bundleConfigAsCjs",
+    "watch": "npx rollup -c --bundleConfigAsCjs --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "rollup",
+    "minification",
+    "whitespace",
+    "template-literal",
+    "build-optimization",
+    "bundle-size",
+    "performance",
+    "javascript",
+    "terser"
+  ],
+  "author": {
+    "name": "Mujeeb Rahman",
+    "url": "https://github.com/mujeeb-enfin",
+    "organization": "MR-INNOVATIONS.COM"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mujeeb-enfin/js-build-template-literal-stripper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mujeeb-enfin/js-build-template-literal-stripper/issues"
+  },
+  "homepage": "https://github.com/mujeeb-enfin/js-build-template-literal-stripper#readme",
+  "funding": {
+    "type": "individual",
+    "url": "https://mr-innovations.com"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.53.3",
+    "rollup-plugin-alias": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
