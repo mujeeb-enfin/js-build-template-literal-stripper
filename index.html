@@ -2,27 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bundled JS Components Demo</title>
-    <link rel="stylesheet" href="assets/css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Build Pipeline Demo</title>
+    <meta name="description" content="A demo showcasing Rollup's complete build pipeline for JS, HTML, and CSS">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Complete Build Pipeline</h1>
+            <p class="subtitle">JavaScript + HTML + CSS Minification</p>
+        </header>
 
-    <h1>Component Integration Test</h1>
-    
-    <hr>
-    
-    <h2>Authentication Components</h2>
-    <div id="auth-login">Login placeholder...</div>
-    <div id="auth-register">Register placeholder...</div>
+        <!-- Content Section -->
+        <main class="content">
+            <section class="card">
+                <h2>Features</h2>
+                <ul class="feature-list">
+                    <li>Aggressive JavaScript minification with exotic whitespace removal</li>
+                    <li>HTML minification with html-minifier-terser</li>
+                    <li>CSS optimization with clean-css</li>
+                    <li>Production-ready output in dist/ folder</li>
+                </ul>
+            </section>
 
-    <hr>
+            <section class="card">
+                <h2>Build Process</h2>
+                <p>This page is minified during the build process. All whitespace, comments, and unnecessary characters are removed for optimal performance.</p>
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="metric-value">19%</span>
+                        <span class="metric-label">Smaller Bundles</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">3-Pass</span>
+                        <span class="metric-label">Cleanup Process</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">100%</span>
+                        <span class="metric-label">Production Ready</span>
+                    </div>
+                </div>
+            </section>
 
-    <h2>Dashboard Components</h2>
-    <div id="dash-overview">Overview placeholder...</div>
-    <div id="dash-profile">Profile placeholder...</div>
-    <div id="dash-reports">Reports placeholder...</div>
+            <section class="card">
+                <h2>Demo Application</h2>
+                <div id="app-container">
+                    <p>JavaScript components will be loaded here...</p>
+                    <button id="demo-button" class="btn btn-primary">Click Me</button>
+                </div>
+            </section>
+        </main>
 
-    <script src="dist/bundle.js"></script> 
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with ❤️ by <a href="https://mr-innovations.com" target="_blank">MR-INNOVATIONS.COM</a></p>
+        </footer>
+    </div>
 
+    <!-- JavaScript Bundle -->
+    <script src="bundle.js"></script>
 </body>
 </html>
